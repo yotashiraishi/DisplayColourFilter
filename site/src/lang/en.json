@@ -5,6 +5,7 @@
   "download": "Download for Mac",
   "meta": ["Version {version}", "Free", "macOS 26 or later", "Apple silicon"],
   "lead": "macOS can turn your screen greyscale or apply a colour filter, but only to every display at once. Display Colour Filter is a small menu bar app that lets you decide, display by display, whether a filter is on and which one. For example, you can keep an external monitor in greyscale to cut down on distraction while your Mac’s built-in display stays in full colour.",
+  "oneDisplay": "It’s handy with a single display, too: instead of going to System Settings › Accessibility › Display each time, you can switch greyscale on or off right from the menu bar.",
   "featuresTitle": "Features",
   "features": [
     "Turn the filter on or off for each display",

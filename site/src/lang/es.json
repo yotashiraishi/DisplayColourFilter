@@ -5,6 +5,7 @@
   "download": "Descargar para Mac",
   "meta": ["Versión {version}", "Gratis", "macOS 26 o posterior", "Chip de Apple"],
   "lead": "macOS puede mostrar la pantalla en escala de grises o aplicar un filtro de color, pero solo a todas las pantallas a la vez. Display Colour Filter es una pequeña app para la barra de menús que te permite decidir, pantalla por pantalla, si se aplica un filtro y cuál. Por ejemplo, puedes mantener un monitor externo en escala de grises para evitar distracciones mientras la pantalla integrada del Mac sigue a todo color.",
+  "oneDisplay": "También es práctico con una sola pantalla: en lugar de ir cada vez a Ajustes del Sistema › Accesibilidad › Pantalla, puedes activar o desactivar la escala de grises directamente desde la barra de menús.",
   "featuresTitle": "Funciones",
   "features": [
     "Activa o desactiva el filtro en cada pantalla",

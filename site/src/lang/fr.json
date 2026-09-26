@@ -5,6 +5,7 @@
   "download": "Télécharger pour Mac",
   "meta": ["Version {version}", "Gratuit", "macOS 26 ou version ultérieure", "Puce Apple"],
   "lead": "macOS peut afficher l’écran en niveaux de gris ou appliquer un filtre de couleur, mais seulement à tous les écrans à la fois. Display Colour Filter est une petite app pour la barre des menus qui vous permet de choisir, écran par écran, si un filtre est appliqué et lequel. Vous pouvez par exemple laisser un moniteur externe en niveaux de gris pour limiter les distractions, tout en gardant l’écran intégré de votre Mac en couleur.",
+  "oneDisplay": "C’est aussi pratique avec un seul écran : au lieu d’ouvrir chaque fois Réglages Système › Accessibilité › Affichage, vous activez ou désactivez les niveaux de gris directement depuis la barre des menus.",
   "featuresTitle": "Fonctionnalités",
   "features": [
     "Activez ou désactivez le filtre pour chaque écran",

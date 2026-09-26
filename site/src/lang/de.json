@@ -5,6 +5,7 @@
   "download": "Für Mac laden",
   "meta": ["Version {version}", "Kostenlos", "macOS 26 oder neuer", "Apple Chip"],
   "lead": "macOS kann den Bildschirm in Graustufen darstellen oder einen Farbfilter anwenden – allerdings immer auf alle Bildschirme gleichzeitig. Display Colour Filter ist eine kleine Menüleisten-App, mit der du für jeden Bildschirm einzeln festlegst, ob ein Filter aktiv ist und welcher. So kannst du zum Beispiel einen externen Monitor in Graustufen halten, um Ablenkung zu vermeiden, während der integrierte Bildschirm deines Mac in Farbe bleibt.",
+  "oneDisplay": "Auch mit nur einem Bildschirm ist das praktisch: Statt jedes Mal Systemeinstellungen › Bedienungshilfen › Anzeige zu öffnen, schaltest du Graustufen direkt in der Menüleiste ein oder aus.",
   "featuresTitle": "Funktionen",
   "features": [
     "Filter für jeden Bildschirm einzeln ein- oder ausschalten",
