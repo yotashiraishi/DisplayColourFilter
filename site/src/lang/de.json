@@ -20,13 +20,6 @@
     "Öffne das Image und ziehe <b>DisplayColourFilter</b> in den Ordner <b>Programme</b>.",
     "Öffne <b>DisplayColourFilter</b> aus dem Ordner „Programme“."
   ],
-  "gatekeeper": "Die App ist kostenlos und Open Source, aber nicht von Apple beglaubigt. Deshalb blockiert macOS sie beim ersten Öffnen. So öffnest du sie trotzdem:",
-  "gatekeeperSteps": [
-    "Wenn macOS meldet, dass die App nicht geöffnet werden kann, klicke auf <b>Fertig</b>.",
-    "Öffne <b>Systemeinstellungen › Datenschutz &amp; Sicherheit</b>, scrolle nach unten und klicke neben der Meldung zu DisplayColourFilter auf <b>Dennoch öffnen</b>.",
-    "Bestätige mit deinem Passwort oder Touch ID und klicke noch einmal auf <b>Dennoch öffnen</b>."
-  ],
-  "gatekeeperNote": "Das ist nur einmal nötig.",
   "usageTitle": "Verwendung",
   "usage": "Klicke auf das Symbol in der Menüleiste und schalte den Filter für den gewünschten Bildschirm ein. Wähle den Filter und passe die Intensität an – Änderungen werden sofort übernommen. Im Zahnradmenü unten rechts findest du „Bei der Anmeldung öffnen“, „Nach Updates suchen …“ und „Beenden“.",
   "notesTitle": "Gut zu wissen",

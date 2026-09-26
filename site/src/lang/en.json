@@ -20,13 +20,6 @@
     "Open the disk image and drag <b>DisplayColourFilter</b> to <b>Applications</b>.",
     "Open <b>DisplayColourFilter</b> from Applications."
   ],
-  "gatekeeper": "The app is free and open source, but it isn’t notarised by Apple, so macOS blocks it the first time you open it. To open it anyway:",
-  "gatekeeperSteps": [
-    "When macOS says the app can’t be opened, click <b>Done</b>.",
-    "Open <b>System Settings › Privacy &amp; Security</b>, scroll down and click <b>Open Anyway</b> next to the message about DisplayColourFilter.",
-    "Confirm with your password or Touch ID, then click <b>Open Anyway</b> once more."
-  ],
-  "gatekeeperNote": "You only need to do this once.",
   "usageTitle": "How to use",
   "usage": "Click the icon in the menu bar and switch on the filter for the display you want. Choose the filter and adjust the intensity – changes take effect immediately. The gear menu at the bottom right has Open at Login, Check for Updates… and Quit.",
   "notesTitle": "Good to know",

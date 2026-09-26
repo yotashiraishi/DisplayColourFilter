@@ -36,17 +36,7 @@ Website: <https://yota.co/DisplayColourFilter>
 2. Open the disk image and drag **DisplayColourFilter** to **Applications**.
 3. Open **DisplayColourFilter** from Applications.
 
-The app is signed ad hoc but not notarised by Apple, so macOS blocks it the first time you open it:
-
-1. When macOS says the app can’t be opened, click **Done**.
-2. Open **System Settings › Privacy & Security**, scroll down to **Security** and click **Open Anyway** next to the message about DisplayColourFilter.
-3. Confirm with your password or Touch ID, then click **Open Anyway** once more.
-
-Alternatively, remove the quarantine flag in Terminal:
-
-```sh
-xattr -dr com.apple.quarantine /Applications/DisplayColourFilter.app
-```
+The app is signed with a Developer ID and notarised by Apple.
 
 Version 1.0.0 can’t update itself. If you have it, install the latest version once in the same way; later versions are delivered from within the app.
 
@@ -80,21 +70,28 @@ Because it depends on private APIs:
 Requires Xcode 26 (Swift 6.2 or later).
 
 ```sh
-bash scripts/build-app.sh   # builds build/DisplayColourFilter.app
-bash scripts/build-dmg.sh   # also packages dist/DisplayColourFilter.dmg
+SIGN_IDENTITY=- bash scripts/build-app.sh   # builds build/DisplayColourFilter.app, signed ad hoc
 ```
+
+`scripts/build-app.sh` signs with the maintainer’s Developer ID unless `SIGN_IDENTITY` is set. An ad hoc signature (`-`) is enough to run the app on your own Mac.
 
 ## Releasing
 
 Updates are delivered with [Sparkle](https://sparkle-project.org). The app reads `https://yota.co/DisplayColourFilter/appcast.xml`, downloads the DMG from the GitHub release and checks its EdDSA signature against `SUPublicEDKey` in `Resources/Info.plist`. The private key is stored in the login keychain of the Mac that makes releases. Keep a backup (`.build/artifacts/sparkle/Sparkle/bin/generate_keys -x <file>`): without it, installed copies can’t receive updates.
 
+Releases are signed with a Developer ID and notarised by Apple. The Mac that makes releases needs the **Developer ID Application** certificate in its login keychain, and notarisation credentials saved as a keychain profile named `DisplayColourFilter` (use an [app-specific password](https://support.apple.com/102654)):
+
+```sh
+xcrun notarytool store-credentials DisplayColourFilter --apple-id <Apple ID> --team-id L2S8LUN48M
+```
+
 1. Raise `CFBundleShortVersionString` and `CFBundleVersion` in `Resources/Info.plist` (Sparkle compares `CFBundleVersion`).
 2. Write the release notes as HTML fragments in `release-notes/<version>/<language>.html` for every language (en, ja, zh-Hans, zh-Hant, ko, fr, de, es). The app shows the ones that match the user’s language, or English.
-3. Build and sign:
+3. Build, sign and notarise:
 
    ```sh
-   bash scripts/build-dmg.sh
-   bash scripts/make-appcast.sh   # signs the DMG and rewrites site/src/appcast.xml
+   bash scripts/build-dmg.sh      # signs, notarises and staples the app and the DMG
+   bash scripts/make-appcast.sh   # signs the DMG for Sparkle and rewrites site/src/appcast.xml
    ```
 
 4. Publish the GitHub release with the same DMG, tagged `v<version>`:
