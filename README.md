@@ -115,5 +115,3 @@ In the gear menu, turn off **Open at Login** if you enabled it and quit the app.
 ## License
 
 [MIT](LICENSE) © 2026 Yota Shiraishi
-
-Display Colour Filter is not affiliated with or endorsed by Apple Inc.

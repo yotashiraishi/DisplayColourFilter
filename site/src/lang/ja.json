@@ -28,6 +28,5 @@
     "フィルタが効くのは Mac に直接つないだディスプレイ(内蔵、USB‑C、Thunderbolt、HDMI)です。DisplayLink、AirPlay、Sidecar のディスプレイには効きません。",
     "アプリを終了すると、すべてのディスプレイがシステム設定どおりの状態に戻ります。"
   ],
-  "source": "GitHub のソースコード",
-  "disclaimer": "Display Colour Filter は Apple Inc. とは関係がなく、Apple Inc. の承認を受けたものでもありません。"
+  "source": "GitHub のソースコード"
 }

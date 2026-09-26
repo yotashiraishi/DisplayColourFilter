@@ -28,6 +28,5 @@
     "濾鏡只對直接連接到 Mac 的顯示器有效（內建、USB‑C、Thunderbolt 和 HDMI），對 DisplayLink、AirPlay 和「並行」顯示器無效。",
     "結束 App 後，所有顯示器都會回復為系統設定的狀態。"
   ],
-  "source": "GitHub 上的原始碼",
-  "disclaimer": "Display Colour Filter 與 Apple Inc. 無關，亦未獲得 Apple Inc. 的認可。"
+  "source": "GitHub 上的原始碼"
 }

@@ -28,6 +28,5 @@
     "Filters work on displays connected directly to your Mac: built-in, USB‑C, Thunderbolt and HDMI. They have no effect on DisplayLink, AirPlay or Sidecar displays.",
     "When you quit the app, every display goes back to the system setting."
   ],
-  "source": "Source code on GitHub",
-  "disclaimer": "Display Colour Filter is not affiliated with or endorsed by Apple Inc."
+  "source": "Source code on GitHub"
 }
