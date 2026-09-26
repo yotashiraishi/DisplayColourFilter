@@ -1,0 +1,40 @@
+{
+  "title": "Display Colour Filter – Farbfilter für jeden Bildschirm deines Mac",
+  "description": "Eine kostenlose Menüleisten-App für den Mac, mit der du Farbfilter wie Graustufen für jeden Bildschirm einzeln ein- oder ausschaltest.",
+  "tagline": "Farbfilter – für jeden Bildschirm einzeln.",
+  "download": "Für Mac laden",
+  "meta": ["Version {version}", "Kostenlos", "macOS 26 oder neuer", "Apple Chip"],
+  "lead": "macOS kann den Bildschirm in Graustufen darstellen oder einen Farbfilter anwenden – allerdings immer auf alle Bildschirme gleichzeitig. Display Colour Filter ist eine kleine Menüleisten-App, mit der du für jeden Bildschirm einzeln festlegst, ob ein Filter aktiv ist und welcher. So kannst du zum Beispiel einen externen Monitor in Graustufen halten, um Ablenkung zu vermeiden, während der integrierte Bildschirm deines Mac in Farbe bleibt.",
+  "featuresTitle": "Funktionen",
+  "features": [
+    "Filter für jeden Bildschirm einzeln ein- oder ausschalten",
+    "Filter für jeden Bildschirm wählen: Graustufen, Rot/Grün, Grün/Rot, Blau/Gelb oder Colorieren",
+    "Intensität (bei „Colorieren“ auch die Färbung) anpassen – mit denselben Filtern wie macOS",
+    "Merkt sich die Einstellungen für jeden Bildschirm und kann bei der Anmeldung automatisch geöffnet werden",
+    "Updates direkt in der App",
+    "Auf Deutsch, Englisch, Japanisch, Chinesisch, Koreanisch, Französisch und Spanisch"
+  ],
+  "installTitle": "Installation",
+  "installSteps": [
+    "Lade <b>DisplayColourFilter.dmg</b> mit der Taste oben.",
+    "Öffne das Image und ziehe <b>DisplayColourFilter</b> in den Ordner <b>Programme</b>.",
+    "Öffne <b>DisplayColourFilter</b> aus dem Ordner „Programme“."
+  ],
+  "gatekeeper": "Die App ist kostenlos und Open Source, aber nicht von Apple beglaubigt. Deshalb blockiert macOS sie beim ersten Öffnen. So öffnest du sie trotzdem:",
+  "gatekeeperSteps": [
+    "Wenn macOS meldet, dass die App nicht geöffnet werden kann, klicke auf <b>Fertig</b>.",
+    "Öffne <b>Systemeinstellungen › Datenschutz &amp; Sicherheit</b>, scrolle nach unten und klicke neben der Meldung zu DisplayColourFilter auf <b>Dennoch öffnen</b>.",
+    "Bestätige mit deinem Passwort oder Touch ID und klicke noch einmal auf <b>Dennoch öffnen</b>."
+  ],
+  "gatekeeperNote": "Das ist nur einmal nötig.",
+  "usageTitle": "Verwendung",
+  "usage": "Klicke auf das Symbol in der Menüleiste und schalte den Filter für den gewünschten Bildschirm ein. Wähle den Filter und passe die Intensität an – Änderungen werden sofort übernommen. Im Zahnradmenü unten rechts findest du „Bei der Anmeldung öffnen“, „Nach Updates suchen …“ und „Beenden“.",
+  "notesTitle": "Gut zu wissen",
+  "notes": [
+    "Lass den Farbfilter des Systems (Systemeinstellungen › Bedienungshilfen › Anzeige › Farbfilter) ausgeschaltet, während du die App verwendest.",
+    "Die Filter wirken auf Bildschirme, die direkt mit deinem Mac verbunden sind: integriert, USB‑C, Thunderbolt und HDMI. Auf DisplayLink-, AirPlay- und Sidecar-Bildschirme haben sie keine Wirkung.",
+    "Wenn du die App beendest, kehren alle Bildschirme zur Systemeinstellung zurück."
+  ],
+  "source": "Quellcode auf GitHub",
+  "disclaimer": "Display Colour Filter steht in keiner Verbindung zu Apple Inc. und wird nicht von Apple Inc. unterstützt."
+}

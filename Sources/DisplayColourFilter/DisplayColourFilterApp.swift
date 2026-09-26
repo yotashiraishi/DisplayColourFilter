@@ -1,3 +1,4 @@
+import Sparkle
 import SwiftUI
 
 @main
@@ -6,7 +7,7 @@ struct DisplayColourFilterApp: App {
 
     var body: some Scene {
         MenuBarExtra("Display Colour Filter", systemImage: "camera.filters") {
-            MenuView(controller: appDelegate.controller)
+            MenuView(controller: appDelegate.controller, updaterController: appDelegate.updaterController)
         }
         .menuBarExtraStyle(.window)
     }
@@ -15,6 +16,8 @@ struct DisplayColourFilterApp: App {
 @MainActor
 final class AppDelegate: NSObject, NSApplicationDelegate {
     let controller = FilterController()
+    /// アップデートの確認・インストール(確認先は Info.plist の SUFeedURL)
+    let updaterController = SPUStandardUpdaterController(startingUpdater: true, updaterDelegate: nil, userDriverDelegate: nil)
 
     func applicationDidFinishLaunching(_ notification: Notification) {
         controller.start()

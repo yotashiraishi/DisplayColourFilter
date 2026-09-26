@@ -1,0 +1,18 @@
+/* 画面の文言のフランス語訳(フィルター関係の用語は macOS のシステム設定の表記に合わせる) */
+
+"Filter" = "Filtre";
+"Intensity" = "Intensité";
+"Hue" = "Nuance";
+
+"Greyscale" = "Niveaux de gris";
+"Red/Green filter (Protanopia)" = "Filtre rouge/vert (protanopie)";
+"Green/Red filter (Deuteranopia)" = "Filtre vert/rouge (deutéranopie)";
+"Blue/Yellow filter (Tritanopia)" = "Filtre bleu/jaune (tritanopie)";
+"Colour Tint" = "Nuances";
+
+"Settings" = "Réglages";
+"Open at Login" = "Ouvrir avec la session";
+"About Display Colour Filter" = "À propos de Display Colour Filter";
+"Check for Updates…" = "Rechercher des mises à jour…";
+"Quit Display Colour Filter" = "Quitter Display Colour Filter";
+"This version of macOS isn’t supported (required system functions weren’t found)." = "Cette version de macOS n’est pas prise en charge (les fonctions système nécessaires sont introuvables).";

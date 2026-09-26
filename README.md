@@ -17,7 +17,8 @@ For example, you can keep an external monitor in greyscale to cut down on distra
 - Adjust the intensity (and the hue for Colour Tint), using the same colour matrices as macOS itself
 - Settings are remembered for each display
 - Optionally open at login
-- English and Japanese interface
+- Updates itself: new versions are delivered from within the app, with release notes in your language
+- Interface in English, Japanese, Simplified Chinese, Traditional Chinese, Korean, French, German and Spanish
 
 ## Requirements
 
@@ -28,6 +29,8 @@ For example, you can keep an external monitor in greyscale to cut down on distra
 Tested on macOS 26.4 with a MacBook Air (M2) and an external USB-C display.
 
 ## Installation
+
+Website: <https://yota.co/DisplayColourFilter>
 
 1. Download [`DisplayColourFilter.dmg`](https://github.com/yotashiraishi/DisplayColourFilter/releases/latest/download/DisplayColourFilter.dmg) from the [latest release](https://github.com/yotashiraishi/DisplayColourFilter/releases/latest).
 2. Open the disk image and drag **DisplayColourFilter** to **Applications**.
@@ -45,6 +48,8 @@ Alternatively, remove the quarantine flag in Terminal:
 xattr -dr com.apple.quarantine /Applications/DisplayColourFilter.app
 ```
 
+Version 1.0.0 can’t update itself. If you have it, install the latest version once in the same way; later versions are delivered from within the app.
+
 ## Usage
 
 Click the icon in the menu bar (three overlapping circles). For each display you can:
@@ -53,7 +58,7 @@ Click the icon in the menu bar (three overlapping circles). For each display you
 - choose the filter type
 - adjust the intensity, and the hue for Colour Tint
 
-Changes take effect immediately. The gear menu at the bottom right of the panel has **Open at Login** (start the app automatically when you log in), **About** and **Quit**.
+Changes take effect immediately. The gear menu at the bottom right of the panel has **Open at Login** (start the app automatically when you log in), **About**, **Check for Updates…** and **Quit**.
 
 Keep the system-wide colour filter (System Settings › Accessibility › Display › Colour filters) **turned off** while you use the app. If both are on, the system filter briefly appears on every display whenever macOS reapplies it.
 
@@ -78,6 +83,33 @@ Requires Xcode 26 (Swift 6.2 or later).
 bash scripts/build-app.sh   # builds build/DisplayColourFilter.app
 bash scripts/build-dmg.sh   # also packages dist/DisplayColourFilter.dmg
 ```
+
+## Releasing
+
+Updates are delivered with [Sparkle](https://sparkle-project.org). The app reads `https://yota.co/DisplayColourFilter/appcast.xml`, downloads the DMG from the GitHub release and checks its EdDSA signature against `SUPublicEDKey` in `Resources/Info.plist`. The private key is stored in the login keychain of the Mac that makes releases. Keep a backup (`.build/artifacts/sparkle/Sparkle/bin/generate_keys -x <file>`): without it, installed copies can’t receive updates.
+
+1. Raise `CFBundleShortVersionString` and `CFBundleVersion` in `Resources/Info.plist` (Sparkle compares `CFBundleVersion`).
+2. Write the release notes as HTML fragments in `release-notes/<version>/<language>.html` for every language (en, ja, zh-Hans, zh-Hant, ko, fr, de, es). The app shows the ones that match the user’s language, or English.
+3. Build and sign:
+
+   ```sh
+   bash scripts/build-dmg.sh
+   bash scripts/make-appcast.sh   # signs the DMG and rewrites site/src/appcast.xml
+   ```
+
+4. Publish the GitHub release with the same DMG, tagged `v<version>`:
+
+   ```sh
+   gh release create v1.1.0 dist/DisplayColourFilter.dmg --title "Display Colour Filter 1.1.0" --notes-file release-notes/1.1.0/en.html
+   ```
+
+5. Deploy the website and the appcast (only after the release exists, so that the download link works):
+
+   ```sh
+   cd site && npx wrangler deploy
+   ```
+
+The website in `site/` is a Cloudflare Worker that serves static files at `yota.co/DisplayColourFilter`. `site/build.mjs` generates a page for each language from `site/src/index.html` and `site/src/lang/*.json`, and takes the version number from `Resources/Info.plist`.
 
 ## Uninstalling
 

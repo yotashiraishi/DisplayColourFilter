@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+<link rel="canonical" href="{{url}}">
+{{alternates}}
+<link rel="icon" href="/DisplayColourFilter/icon.png" type="image/png">
+<link rel="apple-touch-icon" href="/DisplayColourFilter/icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Display Colour Filter">
+<meta property="og:description" content="{{description}}">
+<meta property="og:url" content="{{url}}">
+<meta property="og:image" content="https://yota.co/DisplayColourFilter/icon.png">
+{{redirect}}
+<style>
+:root {
+  /* 文字の色 */
+  --color-text: #1d1d1f;
+  /* バージョン表記・注記・言語メニューなど、補足の文字の色 */
+  --color-sub: #6e6e73;
+  /* 背景の色 */
+  --color-bg: #fff;
+  /* 区切り線の色 */
+  --color-line: #e3e3e8;
+  /* ダウンロードボタンの背景と文字の色 */
+  --color-button: #1d1d1f;
+  --color-button-text: #fff;
+  /* 本文の最大幅 */
+  --width: 38rem;
+  /* 画面の左右の余白 */
+  --gutter: 24px;
+  /* 先頭のアプリアイコンの大きさ */
+  --icon-size: 144px;
+  color-scheme: light dark;
+}
+/* ダークモードの色 */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: #f5f5f7;
+    --color-sub: #a1a1a6;
+    --color-bg: #161617;
+    --color-line: #333336;
+    --color-button: #f5f5f7;
+    --color-button-text: #1d1d1f;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font: 17px/1.7 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+:lang(ja), :lang(zh), :lang(ko) { line-height: 1.85; }
+a { color: inherit; }
+b { font-weight: 600; }
+p, ul, ol { margin: 0 0 16px; }
+p:last-child, ul:last-child, ol:last-child { margin-bottom: 0; }
+ul, ol { padding-left: 1.4em; }
+li + li { margin-top: 8px; }
+
+.language { position: absolute; top: 16px; right: var(--gutter); font-size: 14px; }
+.language summary { display: flex; align-items: center; gap: 6px; color: var(--color-sub); cursor: pointer; list-style: none; }
+.language summary::-webkit-details-marker { display: none; }
+.language ul { position: absolute; right: 0; z-index: 1; margin: 8px 0 0; padding: 6px 0; list-style: none; white-space: nowrap; background: var(--color-bg); border: 1px solid var(--color-line); border-radius: 10px; box-shadow: 0 8px 24px rgb(0 0 0 / 0.12); }
+.language li + li { margin-top: 0; }
+.language a { display: block; padding: 4px 16px; text-decoration: none; }
+.language a:hover { background: var(--color-line); }
+
+main, footer { max-width: var(--width); margin: 0 auto; padding: 0 var(--gutter); }
+section { padding: 40px 0; border-top: 1px solid var(--color-line); }
+h2 { margin: 0 0 16px; font-size: 22px; line-height: 1.3; }
+
+.hero { padding: 96px 0 56px; border-top: 0; text-align: center; }
+.hero img { width: var(--icon-size); height: var(--icon-size); }
+.hero h1 { margin: 12px 0 4px; font-size: 40px; line-height: 1.15; letter-spacing: -0.02em; }
+.tagline { font-size: 22px; line-height: 1.5; color: var(--color-sub); text-wrap: balance; word-break: auto-phrase; }
+.download { display: inline-block; margin-top: 32px; padding: 14px 32px; border-radius: 999px; background: var(--color-button); color: var(--color-button-text); font-weight: 600; text-decoration: none; }
+.download:hover { opacity: 0.8; }
+.meta { margin-top: 12px; padding: 0; list-style: none; font-size: 14px; color: var(--color-sub); text-wrap: balance; }
+/* 項目の途中では改行せず、折り返したときに区切りの点が行頭に来ないよう点は項目の後ろに付ける */
+.meta li { display: inline; white-space: nowrap; }
+.meta li:not(:last-child)::after { content: " ·"; }
+.note { color: var(--color-sub); }
+
+footer { padding-top: 32px; padding-bottom: 64px; border-top: 1px solid var(--color-line); font-size: 14px; color: var(--color-sub); }
+footer p { margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<details class="language">
+  <summary><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="8" cy="8" r="6.5"/><path d="M1.5 8h13M8 1.5c1.9 1.8 2.8 4 2.8 6.5S9.9 12.7 8 14.5M8 1.5C6.1 3.3 5.2 5.5 5.2 8s.9 4.7 2.8 6.5"/></svg>{{languageName}}</summary>
+  <ul>
+{{languages}}
+  </ul>
+</details>
+<main>
+  <section class="hero">
+    <img src="/DisplayColourFilter/icon.png" width="144" height="144" alt="">
+    <h1>Display Colour Filter</h1>
+    <p class="tagline">{{tagline}}</p>
+    <a class="download" href="https://github.com/yotashiraishi/DisplayColourFilter/releases/latest/download/DisplayColourFilter.dmg">{{download}}</a>
+    <ul class="meta">
+{{meta}}
+    </ul>
+  </section>
+  <section>
+    <p>{{lead}}</p>
+  </section>
+  <section>
+    <h2>{{featuresTitle}}</h2>
+    <ul>
+{{features}}
+    </ul>
+  </section>
+  <section>
+    <h2>{{installTitle}}</h2>
+    <ol>
+{{installSteps}}
+    </ol>
+    <p>{{gatekeeper}}</p>
+    <ol>
+{{gatekeeperSteps}}
+    </ol>
+    <p class="note">{{gatekeeperNote}}</p>
+  </section>
+  <section>
+    <h2>{{usageTitle}}</h2>
+    <p>{{usage}}</p>
+  </section>
+  <section>
+    <h2>{{notesTitle}}</h2>
+    <ul>
+{{notes}}
+    </ul>
+  </section>
+</main>
+<footer>
+  <p><a href="https://github.com/yotashiraishi/DisplayColourFilter">{{source}}</a></p>
+  <p>© 2026 Yota Shiraishi · MIT License</p>
+  <p>{{disclaimer}}</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,18 @@
+/* 画面の文言の韓国語訳(フィルター関係の用語は macOS のシステム設定の表記に合わせる) */
+
+"Filter" = "필터";
+"Intensity" = "강도";
+"Hue" = "색채";
+
+"Greyscale" = "그레이스케일";
+"Red/Green filter (Protanopia)" = "빨간색/초록색 필터(적색맹)";
+"Green/Red filter (Deuteranopia)" = "초록색/빨간색 필터(녹색맹)";
+"Blue/Yellow filter (Tritanopia)" = "파란색/노란색 필터(청황 색맹)";
+"Colour Tint" = "색상 색조";
+
+"Settings" = "설정";
+"Open at Login" = "로그인 시 열기";
+"About Display Colour Filter" = "Display Colour Filter에 관하여";
+"Check for Updates…" = "업데이트 확인…";
+"Quit Display Colour Filter" = "Display Colour Filter 종료";
+"This version of macOS isn’t supported (required system functions weren’t found)." = "이 버전의 macOS는 지원되지 않습니다(필요한 시스템 기능을 찾을 수 없음).";

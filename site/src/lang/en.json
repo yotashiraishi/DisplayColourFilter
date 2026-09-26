@@ -1,0 +1,40 @@
+{
+  "title": "Display Colour Filter – Colour filters for each display on your Mac",
+  "description": "A free menu bar app for Mac that turns colour filters such as greyscale on or off for each display separately.",
+  "tagline": "Colour filters, display by display.",
+  "download": "Download for Mac",
+  "meta": ["Version {version}", "Free", "macOS 26 or later", "Apple silicon"],
+  "lead": "macOS can turn your screen greyscale or apply a colour filter, but only to every display at once. Display Colour Filter is a small menu bar app that lets you decide, display by display, whether a filter is on and which one. For example, you can keep an external monitor in greyscale to cut down on distraction while your Mac’s built-in display stays in full colour.",
+  "featuresTitle": "Features",
+  "features": [
+    "Turn the filter on or off for each display",
+    "Choose a filter for each display: Greyscale, Red/Green, Green/Red, Blue/Yellow or Colour Tint",
+    "Adjust the intensity (and the hue for Colour Tint), using the same filters as macOS",
+    "Remembers the settings for each display, and can open automatically at login",
+    "Updates from within the app",
+    "In English, Japanese, Chinese, Korean, French, German and Spanish"
+  ],
+  "installTitle": "Installation",
+  "installSteps": [
+    "Download <b>DisplayColourFilter.dmg</b> with the button above.",
+    "Open the disk image and drag <b>DisplayColourFilter</b> to <b>Applications</b>.",
+    "Open <b>DisplayColourFilter</b> from Applications."
+  ],
+  "gatekeeper": "The app is free and open source, but it isn’t notarised by Apple, so macOS blocks it the first time you open it. To open it anyway:",
+  "gatekeeperSteps": [
+    "When macOS says the app can’t be opened, click <b>Done</b>.",
+    "Open <b>System Settings › Privacy &amp; Security</b>, scroll down and click <b>Open Anyway</b> next to the message about DisplayColourFilter.",
+    "Confirm with your password or Touch ID, then click <b>Open Anyway</b> once more."
+  ],
+  "gatekeeperNote": "You only need to do this once.",
+  "usageTitle": "How to use",
+  "usage": "Click the icon in the menu bar and switch on the filter for the display you want. Choose the filter and adjust the intensity – changes take effect immediately. The gear menu at the bottom right has Open at Login, Check for Updates… and Quit.",
+  "notesTitle": "Good to know",
+  "notes": [
+    "Keep the system’s own colour filter (System Settings › Accessibility › Display › Colour filters) turned off while you use the app.",
+    "Filters work on displays connected directly to your Mac: built-in, USB‑C, Thunderbolt and HDMI. They have no effect on DisplayLink, AirPlay or Sidecar displays.",
+    "When you quit the app, every display goes back to the system setting."
+  ],
+  "source": "Source code on GitHub",
+  "disclaimer": "Display Colour Filter is not affiliated with or endorsed by Apple Inc."
+}

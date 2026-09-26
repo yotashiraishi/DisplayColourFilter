@@ -1,0 +1,18 @@
+/* 画面の文言の繁体字中国語訳(フィルター関係の用語は macOS のシステム設定の表記に合わせる) */
+
+"Filter" = "濾鏡";
+"Intensity" = "強度";
+"Hue" = "色調";
+
+"Greyscale" = "灰階";
+"Red/Green filter (Protanopia)" = "紅/綠濾鏡（紅色盲）";
+"Green/Red filter (Deuteranopia)" = "綠/紅濾鏡（綠色盲）";
+"Blue/Yellow filter (Tritanopia)" = "藍/黃濾鏡（藍色盲）";
+"Colour Tint" = "色調";
+
+"Settings" = "設定";
+"Open at Login" = "登入時打開";
+"About Display Colour Filter" = "關於「Display Colour Filter」";
+"Check for Updates…" = "檢查更新項目⋯";
+"Quit Display Colour Filter" = "結束「Display Colour Filter」";
+"This version of macOS isn’t supported (required system functions weren’t found)." = "不支援此版本的 macOS（找不到所需的系統功能）。";

@@ -1,9 +1,11 @@
 import ServiceManagement
+import Sparkle
 import SwiftUI
 
 /// メニューバーのアイコンを押したときに開くパネル
 struct MenuView: View {
     let controller: FilterController
+    let updaterController: SPUStandardUpdaterController
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
@@ -19,7 +21,7 @@ struct MenuView: View {
             }
             HStack {
                 Spacer()
-                AppMenu()
+                AppMenu(updaterController: updaterController)
             }
         }
         .padding(14)
@@ -29,6 +31,7 @@ struct MenuView: View {
 
 /// 右下の歯車メニュー(ログイン時に開く・About・終了など、ディスプレイ以外のアプリ全体の項目)
 private struct AppMenu: View {
+    let updaterController: SPUStandardUpdaterController
     @State private var opensAtLogin = SMAppService.mainApp.status == .enabled
 
     var body: some View {
@@ -36,6 +39,7 @@ private struct AppMenu: View {
             Toggle("Open at Login", isOn: Binding(get: { opensAtLogin }, set: { setOpensAtLogin($0) }))
             Divider()
             Button("About Display Colour Filter") { showAbout() }
+            Button("Check for Updates…") { updaterController.checkForUpdates(nil) }
             Button("Quit Display Colour Filter") { NSApp.terminate(nil) }
         } label: {
             Label("Settings", systemImage: "gearshape").labelStyle(.iconOnly)

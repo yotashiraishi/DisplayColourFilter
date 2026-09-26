@@ -3,3 +3,5 @@
 /.swiftpm/
 /build/
 /dist/
+/site/dist/
+/site/.wrangler/

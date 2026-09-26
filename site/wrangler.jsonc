@@ -1,0 +1,19 @@
+// https://yota.co/DisplayColourFilter 以下だけを、この Worker(静的ファイルのみ・無料枠)で配信する。
+// yota.co のほかのページ(Cloudflare Pages)はこれまでどおり
+{
+  "name": "display-colour-filter",
+  "compatibility_date": "2026-09-01",
+  // dist/ を作り直してからデプロイする
+  "build": { "command": "node build.mjs" },
+  "assets": {
+    "directory": "./dist",
+    // /DisplayColourFilter を /DisplayColourFilter/ に転送するなど、末尾のスラッシュを揃える
+    "html_handling": "auto-trailing-slash"
+  },
+  "routes": [
+    { "pattern": "yota.co/DisplayColourFilter", "zone_name": "yota.co" },
+    { "pattern": "yota.co/DisplayColourFilter/*", "zone_name": "yota.co" }
+  ],
+  // *.workers.dev のアドレスでは公開しない
+  "workers_dev": false
+}

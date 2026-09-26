@@ -1,0 +1,40 @@
+{
+  "title": "Display Colour Filter – Des filtres de couleur pour chaque écran de votre Mac",
+  "description": "Une app gratuite pour la barre des menus du Mac qui active ou désactive les filtres de couleur, comme les niveaux de gris, écran par écran.",
+  "tagline": "Des filtres de couleur, écran par écran.",
+  "download": "Télécharger pour Mac",
+  "meta": ["Version {version}", "Gratuit", "macOS 26 ou version ultérieure", "Puce Apple"],
+  "lead": "macOS peut afficher l’écran en niveaux de gris ou appliquer un filtre de couleur, mais seulement à tous les écrans à la fois. Display Colour Filter est une petite app pour la barre des menus qui vous permet de choisir, écran par écran, si un filtre est appliqué et lequel. Vous pouvez par exemple laisser un moniteur externe en niveaux de gris pour limiter les distractions, tout en gardant l’écran intégré de votre Mac en couleur.",
+  "featuresTitle": "Fonctionnalités",
+  "features": [
+    "Activez ou désactivez le filtre pour chaque écran",
+    "Choisissez un filtre pour chaque écran : niveaux de gris, rouge/vert, vert/rouge, bleu/jaune ou nuances",
+    "Réglez l’intensité (et la teinte pour le filtre Nuances), avec les mêmes filtres que macOS",
+    "Les réglages de chaque écran sont mémorisés, et l’app peut s’ouvrir automatiquement à l’ouverture de session",
+    "Mises à jour depuis l’app",
+    "En français, anglais, japonais, chinois, coréen, allemand et espagnol"
+  ],
+  "installTitle": "Installation",
+  "installSteps": [
+    "Téléchargez <b>DisplayColourFilter.dmg</b> à l’aide du bouton ci-dessus.",
+    "Ouvrez l’image disque et faites glisser <b>DisplayColourFilter</b> dans le dossier <b>Applications</b>.",
+    "Ouvrez <b>DisplayColourFilter</b> depuis le dossier Applications."
+  ],
+  "gatekeeper": "L’app est gratuite et open source, mais elle n’est pas notariée par Apple : macOS la bloque donc la première fois que vous l’ouvrez. Pour l’ouvrir quand même :",
+  "gatekeeperSteps": [
+    "Lorsque macOS indique que l’app ne peut pas être ouverte, cliquez sur <b>Terminé</b>.",
+    "Ouvrez <b>Réglages Système › Confidentialité et sécurité</b>, faites défiler vers le bas et cliquez sur <b>Ouvrir quand même</b> à côté du message concernant DisplayColourFilter.",
+    "Confirmez avec votre mot de passe ou Touch ID, puis cliquez à nouveau sur <b>Ouvrir quand même</b>."
+  ],
+  "gatekeeperNote": "Cette opération n’est nécessaire qu’une seule fois.",
+  "usageTitle": "Utilisation",
+  "usage": "Cliquez sur l’icône dans la barre des menus et activez le filtre pour l’écran souhaité. Choisissez le filtre et réglez l’intensité : les modifications s’appliquent immédiatement. Le menu en forme d’engrenage, en bas à droite, contient « Ouvrir avec la session », « Rechercher des mises à jour… » et « Quitter ».",
+  "notesTitle": "Bon à savoir",
+  "notes": [
+    "Laissez le filtre de couleur du système (Réglages Système › Accessibilité › Affichage › Filtres de couleur) désactivé lorsque vous utilisez l’app.",
+    "Les filtres fonctionnent sur les écrans connectés directement à votre Mac : intégré, USB‑C, Thunderbolt et HDMI. Ils sont sans effet sur les écrans DisplayLink, AirPlay et Sidecar.",
+    "Lorsque vous quittez l’app, tous les écrans reviennent au réglage du système."
+  ],
+  "source": "Code source sur GitHub",
+  "disclaimer": "Display Colour Filter n’est ni affilié à Apple Inc. ni approuvé par Apple Inc."
+}

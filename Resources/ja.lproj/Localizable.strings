@@ -13,5 +13,6 @@
 "Settings" = "設定";
 "Open at Login" = "ログイン時に開く";
 "About Display Colour Filter" = "Display Colour Filter について";
+"Check for Updates…" = "アップデートを確認…";
 "Quit Display Colour Filter" = "Display Colour Filter を終了";
 "This version of macOS isn’t supported (required system functions weren’t found)." = "この macOS では使えません(必要なシステム機能が見つかりません)";
