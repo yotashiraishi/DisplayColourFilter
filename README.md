@@ -38,8 +38,6 @@ Website: <https://yota.co/DisplayColourFilter>
 
 The app is signed with a Developer ID and notarised by Apple.
 
-Version 1.0.0 can’t update itself. If you have it, install the latest version once in the same way; later versions are delivered from within the app.
-
 ## Usage
 
 Click the icon in the menu bar (three overlapping circles). For each display you can:
