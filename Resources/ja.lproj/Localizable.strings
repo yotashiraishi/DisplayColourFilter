@@ -1,0 +1,17 @@
+/* 画面の文言の日本語訳(英語はコード内の文字列そのまま) */
+
+"Filter" = "種類";
+"Intensity" = "強さ";
+"Hue" = "色合い";
+
+"Greyscale" = "グレイスケール";
+"Red/Green filter (Protanopia)" = "赤/緑フィルタ(1型色覚)";
+"Green/Red filter (Deuteranopia)" = "緑/赤フィルタ(2型色覚)";
+"Blue/Yellow filter (Tritanopia)" = "青/黄フィルタ(3型色覚)";
+"Colour Tint" = "カラーティント";
+
+"Settings" = "設定";
+"Open at Login" = "ログイン時に開く";
+"About Display Colour Filter" = "Display Colour Filter について";
+"Quit Display Colour Filter" = "Display Colour Filter を終了";
+"This version of macOS isn’t supported (required system functions weren’t found)." = "この macOS では使えません(必要なシステム機能が見つかりません)";

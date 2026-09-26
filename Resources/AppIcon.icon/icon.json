@@ -1,0 +1,35 @@
+{
+  "fill" : {
+    "linear-gradient" : [
+      "extended-srgb:0.20000,0.22000,0.27000,1.00000",
+      "extended-srgb:0.07000,0.08000,0.10000,1.00000"
+    ]
+  },
+  "groups" : [
+    {
+      "layers" : [
+        {
+          "glass" : true,
+          "image-name" : "display-colour.svg",
+          "name" : "display-colour"
+        },
+        {
+          "glass" : true,
+          "image-name" : "display-grey.svg",
+          "name" : "display-grey"
+        }
+      ],
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.5
+      },
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.3
+      }
+    }
+  ],
+  "supported-platforms" : {
+    "squares" : "shared"
+  }
+}
